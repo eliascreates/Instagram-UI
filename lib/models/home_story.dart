@@ -6,12 +6,30 @@ class Story {
   int numStories;
 
   static List<Story> stories = [
-    Story(username: "beetroot", userProfile: "Photo", numStories: 0),
-    Story(username: "lambady", userProfile: "Photo", numStories: 0),
-    Story(username: "thatbody", userProfile: "Photo", numStories: 0),
-    Story(username: "thisgotty", userProfile: "Photo", numStories: 0),
-    Story(username: "jagotty", userProfile: "Photo", numStories: 0),
-    Story(username: "liltex", userProfile: "Photo", numStories: 0)
+    Story(
+        username: "Your story",
+        userProfile: "assets/profiles/beet_profile.jpg",
+        numStories: 0),
+    Story(
+        username: "lambady",
+        userProfile: "assets/profiles/icon_profile.jpg",
+        numStories: 0),
+    Story(
+        username: "thatbody",
+        userProfile: "assets/profiles/luffi_profile.jfif",
+        numStories: 0),
+    Story(
+        username: "thisgotty",
+        userProfile: "assets/profiles/tom_profile.jfif",
+        numStories: 0),
+    Story(
+        username: "jagotty",
+        userProfile: "assets/profiles/cat_profile.jpg",
+        numStories: 0),
+    Story(
+        username: "liltex",
+        userProfile: "assets/profiles/her_profile.jpg",
+        numStories: 0)
   ];
 
   bool get hasStories {

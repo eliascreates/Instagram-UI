@@ -17,10 +17,11 @@ class HomePage extends StatelessWidget {
           children: [
             const Text('Instagram'),
             Row(
-              children: const [
-                Icon(Icons.favorite_outline_rounded),
-                SizedBox(width: 20),
-                Icon(Icons.send),
+              children: [
+                const Icon(Icons.favorite_outline_rounded, size: 28),
+                const SizedBox(width: 20),
+                Image.asset('assets/icons/send.png',
+                    width: 25, fit: BoxFit.cover),
               ],
             ),
           ],

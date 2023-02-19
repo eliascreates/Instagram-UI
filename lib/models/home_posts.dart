@@ -12,54 +12,54 @@ class PostItem {
   static List<PostItem> posts = [
     PostItem(
         username: "beetroot",
-        profilePhoto: "lucy",
+        profilePhoto: "assets/profiles/beet_profile.jpg",
         postDescr:
             "Why did the programmer quit his job? Because he didn't get arrays 😅",
-        postPhoto: "outside",
+        postPhoto: "assets/posts/quit_post.jpg",
         numLikes: 5,
         numComments: 3,
         datePosted: "February 16"),
     PostItem(
         username: "liltext",
-        profilePhoto: "liltex",
+        profilePhoto: "assets/profiles/her_profile.jpg",
         postDescr:
             "Real programmers count from 0. So Yes, I only ate 3 slices of pizza 🥰🍕 ",
-        postPhoto: "code",
+        postPhoto: "assets/posts/pizza_post.jpg",
         numLikes: 208,
         numComments: 22,
-        datePosted: "February 12"),
+        datePosted: "February 10"),
     PostItem(
         username: "jagotty",
-        profilePhoto: "jagotty",
+        profilePhoto: "assets/profiles/cat_profile.jpg",
         postDescr: "Johnny came and took my baby 😭",
-        postPhoto: "johnnysbaby",
+        postPhoto: "assets/posts/baby_post.jpg",
         numLikes: 14,
         numComments: 200,
         datePosted: "February 14"),
     PostItem(
         username: "thatbody",
-        profilePhoto: "lambady",
+        profilePhoto: "assets/profiles/luffi_profile.jfif",
         postDescr: "Hearing aide, where are you? Over ear!",
-        postPhoto: "thisgotty",
+        postPhoto: "assets/posts/bug_post.jpg",
         numLikes: 60,
         numComments: 44,
-        datePosted: "February 16"),
+        datePosted: "16 hours ago"),
     PostItem(
         username: "thisgotty",
-        profilePhoto: "lambady",
+        profilePhoto: "assets/profiles/tom_profile.jfif",
         postDescr: "The bugs keep bugging me even when I sleep 🛌🛏️👩‍💻",
-        postPhoto: "thisgotty",
+        postPhoto: "assets/posts/sleepcode_post.jpg",
         numLikes: 18,
         numComments: 94,
         datePosted: "February 16"),
     PostItem(
         username: "lambady",
-        profilePhoto: "lambady",
+        profilePhoto: "assets/profiles/icon_profile.jpg",
         postDescr: "Marriage is hard",
-        postPhoto: "thisgotty",
+        postPhoto: "assets/posts/hard_post.png",
         numLikes: 800,
         numComments: 400,
-        datePosted: "February 16")
+        datePosted: "January 16")
   ];
 
   PostItem(

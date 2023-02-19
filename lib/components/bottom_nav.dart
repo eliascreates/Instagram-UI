@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BottomNav extends StatelessWidget {
-  const BottomNav({super.key, required this.selectedIndex, required this.indexBottomNav});
+  const BottomNav(
+      {super.key, required this.selectedIndex, required this.indexBottomNav});
 
   final int selectedIndex;
   final void Function(int) indexBottomNav;

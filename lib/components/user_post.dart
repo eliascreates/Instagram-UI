@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import '../models/home_posts.dart';
 
 class Post extends StatelessWidget {
-  const Post({super.key, required this.userPost});
-
   final PostItem userPost;
+
+  const Post({super.key, required this.userPost});
 
   @override
   Widget build(BuildContext context) {
@@ -31,12 +31,12 @@ class Post extends StatelessWidget {
                             shape: BoxShape.circle,
                             border: Border.all(width: 1, color: Colors.grey),
                             color: Colors.transparent),
-                        child: Container(
-                          width: 30,
-                          height: 30,
-                          decoration: const BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.grey,
+                        child: ClipOval(
+                          child: Image(
+                            width: 30,
+                            height: 30,
+                            image: AssetImage(userPost.profilePhoto),
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -53,11 +53,13 @@ class Post extends StatelessWidget {
             ],
           ),
         ),
-        //Photo
+        //Post Photo
         const SizedBox(height: 10),
-        Container(
+        Image(
+          image: AssetImage(userPost.postPhoto),
+          fit: BoxFit.cover,
+          width: 360,
           height: 360,
-          color: Colors.grey,
         ),
         const SizedBox(height: 10),
         Padding(
@@ -66,15 +68,17 @@ class Post extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
-                children: const [
+                children: [
                   // Size69dBox(width: 15),
-                  Icon(Icons.favorite_outline_rounded, size: 28),
-                  SizedBox(width: 15),
-                  Icon(Icons.mode_comment_outlined, size: 28),
-                  SizedBox(width: 15),
-                  Icon(Icons.send, size: 28),
-                  SizedBox(width: 36),
-                  Icon(Icons.more_horiz_outlined, size: 28, color: Colors.grey),
+                  const Icon(Icons.favorite_outline_rounded, size: 28),
+                  const SizedBox(width: 15),
+                  const Icon(Icons.mode_comment_outlined, size: 28),
+                  const SizedBox(width: 15),
+                  Image.asset('assets/icons/send.png',
+                      width: 25, fit: BoxFit.cover),
+                  const SizedBox(width: 36),
+                  const Icon(Icons.more_horiz_outlined,
+                      size: 28, color: Colors.grey),
                 ],
               ),
               const Icon(Icons.bookmark_border_outlined, size: 28),
